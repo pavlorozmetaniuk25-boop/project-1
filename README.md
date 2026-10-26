@@ -44,4 +44,5 @@ g++ -std=c++11 main.cpp generator.cpp checker.cpp -o PasswordGenerator.exe
 
 Автори
 pavlo rozmetaniuk
+
 yuliia shpilchak
