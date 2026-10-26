@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <limits>
 
@@ -18,6 +19,17 @@ int main() {
 
     try {
         std::string password = generatePassword(length);
+
+        std::ofstream file("password.txt");
+
+        if (file.is_open()) {
+            file << password << '\n';
+            file.close();
+            std::cout << "Password saved to password.txt\n";
+        }
+        else {
+            std::cout << "Error: Could not save password to file.\n";
+        }
 
         std::cout << "\nGenerated password: " << password << '\n';
         std::cout << "Password strength: "
