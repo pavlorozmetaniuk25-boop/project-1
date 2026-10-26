@@ -43,6 +43,7 @@ g++ -std=c++11 main.cpp generator.cpp checker.cpp -o PasswordGenerator.exe
 Проєкт розроблявся спільно з використанням Git і GitHub. Для роботи над окремими функціями використовувалися гілки, а зміни об'єднувалися з основною гілкою "main" за допомогою Pull Request.
 
 Автори
+
 pavlo rozmetaniuk
 
 yuliia shpilchak
